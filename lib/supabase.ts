@@ -17,6 +17,8 @@ export const supabaseAdmin = supabaseUrl && supabaseServiceKey && supabaseUrl !=
       }
     })
   : null;
+
+  console.log('Supabase Admin Client:', supabaseAdmin);
 // Database types
 export interface Project {
   id: string;
