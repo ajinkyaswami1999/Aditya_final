@@ -4,12 +4,12 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-export const supabase = supabaseUrl && supabaseAnonKey && supabaseUrl !== 'https://your-project-id.supabase.co'
+export const supabase = supabaseUrl && supabaseAnonKey && supabaseUrl !== 'https://wqbqyipalgqzbzghjyyb.supabase.co'
   ? createClient(supabaseUrl, supabaseAnonKey)
   : null;
 
 // Service role client for admin operations (bypasses RLS)
-export const supabaseAdmin = supabaseUrl && supabaseServiceKey && supabaseUrl !== 'https://your-project-id.supabase.co'
+export const supabaseAdmin = supabaseUrl && supabaseServiceKey && supabaseUrl !== 'https://wqbqyipalgqzbzghjyyb.supabase.co'
   ? createClient(supabaseUrl, supabaseServiceKey, {
       auth: {
         autoRefreshToken: false,

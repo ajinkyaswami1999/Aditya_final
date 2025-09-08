@@ -43,6 +43,7 @@ export default function AdminPanel() {
   const [showTeamForm, setShowTeamForm] = useState(false);
   const [showTestimonialForm, setShowTestimonialForm] = useState(false);
   const [uploading, setUploading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   // Site Settings States
   const [siteStats, setSiteStats] = useState({
