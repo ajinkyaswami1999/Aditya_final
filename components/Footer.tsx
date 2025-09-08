@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
-import { siteSettingsApi } from '@/lib/supabase';
+import { siteSettingsApi,supabase } from '@/lib/supabase';
 
 export default function Footer() {
   const [contactInfo, setContactInfo] = useState({
