@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, MapPin, Calendar } from 'lucide-react';
-import { projectsApi, type Project } from '@/lib/supabase';
+import { projectsApi, type Project,supabase } from '@/lib/supabase';
 
 
 export default function ProjectsGrid() {
